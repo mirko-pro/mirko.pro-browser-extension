@@ -20,12 +20,8 @@ export const addMirkoProSettingsButton = (el: any) => {
       if (a) {
         a.href = '#mirko-pro-settings';
         a.innerHTML = 'mirko.pro';
-
-        // prevent default click event and open extension settings
         a.addEventListener('click', (e) => {
           e.preventDefault();
-
-          // send message to background script
           browser.runtime.sendMessage({
             type: 'openSettings',
           });

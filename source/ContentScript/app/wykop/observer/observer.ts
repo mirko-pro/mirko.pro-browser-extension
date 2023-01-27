@@ -11,7 +11,7 @@ import { PossibleToObserve } from './types';
 import {
   observeClassNames,
   userOptionsRequirements,
-  alwaysObserve,
+  alwaysObserved,
 } from './config';
 
 const observer = async () => {
@@ -31,7 +31,7 @@ const observer = async () => {
     }
   });
 
-  alwaysObserve.forEach((item) => {
+  alwaysObserved.forEach((item) => {
     if (!requiredToObserve.includes(item)) {
       requiredToObserve.push(item);
     }

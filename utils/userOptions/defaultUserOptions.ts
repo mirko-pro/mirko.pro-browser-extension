@@ -3,8 +3,10 @@ import { userOptionsInterface } from './types';
 const defaultUserOptions: userOptionsInterface = {
   wykop: {
     themeEnabled: true,
-    themeSource: 'mirko.pro-local',
-    themeUrl: 'wykopDarkClassic.css',
+    // themeSource: 'mirko.pro-local',
+    // themeUrl: 'wykopDarkClassic.css',
+    themeSource: 'mirko.pro-remote',
+    themeUrl: 'https://mirko.pro/themes/wykopDarkClassic.css',
     removeHitsSlider: true,
     syntaxHighlighting: true,
     showCommentCounterInsideExpandButton: true,

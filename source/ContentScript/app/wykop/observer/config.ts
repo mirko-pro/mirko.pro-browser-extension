@@ -28,6 +28,6 @@ export const userOptionsRequirements: UserOptionsRequirements = {
   hideWatermarks: ['ENTRY_PHOTO'],
 };
 
-export const alwaysObserve: PossibleToObserve[] = [
+export const alwaysObserved: PossibleToObserve[] = [
   'HEADER_ACCOUNT_DROPDOWN_SETTINGS',
 ];

@@ -3,7 +3,7 @@ import {
   // wykopApiUserInterface
 } from './types';
 
-import { linkVotersTransformer } from '../transformers/links-transformer';
+import { linkVotersTransformer } from '../transformers/linksTransformer';
 
 const apiUrl = `https://wykop.pl/api/v3/`;
 
