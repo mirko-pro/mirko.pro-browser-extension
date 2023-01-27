@@ -1,0 +1,128 @@
+// text input
+input[type="text"],
+input[type="password"],
+.textarea textarea,
+.phone .vti__input {
+  // background-color: var(--tropicalBlue) !important;
+  background-color: #3b3b3b !important;
+  border: 1px solid rgba(#ffffff, 0.1);
+  box-shadow: none !important;
+
+  &::placeholder {
+    color: rgba(#ffffff, 0.35) !important;
+  }
+
+  &:focus,
+  &:active {
+    border-color: rgba(#ffffff, 0.25) !important;
+  }
+}
+
+// phone input
+// [data-night-mode] section.phone[data-v-382de444] .vti__input
+// [data-night-mode] .vue-tel-input[data-v-a39d7d7a]
+
+.vue-tel-input {
+  background-color: var(--squeeze) !important;
+  border: 1px solid rgba(#ffffff, 0.1);
+}
+
+// phone select
+// [data-night-mode] section.phone[data-v-382de444] ul.vti__dropdown-list li.vti__dropdown-item
+.phone {
+  .vti__dropdown-list {
+  }
+
+  ul {
+    background-color: var(--geyser) !important;
+
+    li {
+      background-color: var(--geyser) !important;
+
+      &:hover {
+        background-color: rgba(#ffffff, 0.1) !important;
+      }
+    }
+  }
+}
+
+// .switch input:checked+label strong i:nth-child(1)
+.switch {
+  input {
+    &:checked {
+      + label strong i:nth-child(1) {
+        background: var(--wykopBlue) !important;
+      }
+    }
+  }
+}
+
+// options
+// aside.advanced>.content section.options ul li label[data-v-fbec74b4]
+// aside.advanced>.content section.options ul li input:checked+label[data-v-fbec74b4]
+
+.options {
+  ul {
+    li {
+      label {
+        border-color: rgba(#ffffff, 0.05) !important;
+        border-width: 2px !important;
+        color: rgba(#ffffff, 0.7) !important;
+
+        &:hover {
+          border-color: rgba(#ffffff, 0.25) !important;
+          color: var(--tuna) !important;
+        }
+      }
+
+      input {
+        &:checked {
+          + label {
+            border-color: var(--wykopBlue) !important;
+            color: var(--tuna) !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Select
+// [data-night-mode] aside.advanced>.content section.select select[data-v-fbec74b4]
+.select {
+  select {
+    background-color: rgba(#ffffff, 0.1) !important;
+    border: 1px solid rgba(#ffffff, 0.15);
+  }
+}
+
+// section.sex>div label .svg-inline[data-v-2ff30d73]
+.sex {
+  div {
+    label {
+      .svg-inline {
+        border-color: rgba(#ffffff, 0.15) !important;
+      }
+    }
+  }
+}
+
+// UPLOAD
+.upload {
+  &:hover {
+    background: rgba(#ffffff, 0.15) !important;
+  }
+
+  span {
+    color: rgba(#ffffff, 0.5) !important;
+  }
+}
+
+// FORM ELEMENTS
+//[data-night-mode] .form-elements p:not(.popper).or span[data-v-6d2da140]
+.form-elements {
+  p:not(.popper).or span {
+    color: rgba(#ffffff, 0.6) !important;
+    background: rgba(#ffffff, 0.15) !important;
+  }
+}

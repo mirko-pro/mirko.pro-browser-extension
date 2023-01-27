@@ -1,0 +1,32 @@
+* {
+  // kolor bg postów
+  --whitish: #2c2c2c;
+
+  --porcelain: #1c1c1c;
+  --steelBluish: #cad0d0;
+  --gullGray: #cad0d0;
+  // --tuna: #c4c8c9;
+  --tuna: #e8e9e9;
+  --abbey: #c4c8c9;
+  --squeeze: rgba(var(--blackishRGB), 0.025);
+  --geyser: #1c1d1d;
+  --heather: #626262;
+  --tropicalBlue: #202020;
+  --athensGray: #4a4a4a;
+  --lilac: #1e1e1e;
+  --mystic: #262626;
+  --santasGray: #131313;
+  --apple: #3a9b62;
+
+  --silverChalice: #a8a8a8;
+
+  // rgb (gradients)
+  --whitishRGB: rgb(33, 33, 33);
+
+  // custom
+  --wykopBlue: rgb(95, 170, 221);
+  --wykopRed: #ff4136;
+  --wykopOrange: #ff5917;
+  --wykopGrayLight: #2e2e2e;
+  --whitishLight: #3f3f3f;
+}

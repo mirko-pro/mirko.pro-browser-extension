@@ -1,0 +1,45 @@
+.new-pagination {
+  margin-bottom: 150px;
+}
+
+.voters {
+  margin-bottom: 150px;
+}
+
+section[data-label^="ad: "] {
+  display: none !important;
+}
+
+// copy code button
+.code-block-wrapper {
+  position: relative;
+
+  .copy-code-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+}
+
+main.main {
+  .popper-button {
+    // second button
+    &.onboarding-btn {
+      display: none;
+    }
+  }
+}
+
+// simple-spinner vue-simple-spinner-wrapper
+// class="vue-simple-spinner"
+
+.vue-simple-spinner {
+  filter: grayscale(100%) !important;
+
+  .vue-simple-spinner {
+    // rgb(46, 75, 95) rgb(35, 45, 51) rgb(35, 45, 51)
+    // makee border color gray
+    border-color: rgb(48, 48, 48) rgb(50, 50, 50) rgb(51, 51, 51)
+      rgb(105, 105, 105) !important;
+  }
+}

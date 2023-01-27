@@ -1,0 +1,37 @@
+// DROPDOWN
+.dropdown {
+  .actions {
+    background: var(--whitishLight) !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45) !important;
+    // -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.75) !important;
+    li {
+      &:hover {
+        background: var(--heather) !important;
+      }
+    }
+  }
+}
+
+// add-to-bucket
+// border-color: [data-night-mode] section.add-to-bucket-btn>aside>.content ul li label[data-v-11d88dee]:before
+// background: [data-night-mode] section.add-to-bucket-btn>aside>.content ul li label[data-v-11d88dee]:after
+.add-to-bucket-btn {
+  aside {
+    background: var(--whitishLight) !important;
+
+    .content {
+      ul {
+        li {
+          label {
+            &:before {
+              border-color: var(--heather) !important;
+            }
+            &:after {
+              background: var(--heather) !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

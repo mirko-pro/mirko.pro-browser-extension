@@ -1,0 +1,27 @@
+// USER PROFILE
+// [data-night-mode] aside.profile-top>section>figure[data-v-fbd45de4]
+.profile-top {
+  section {
+    figure {
+      background: var(--geyser) !important;
+    }
+  }
+}
+
+// Tło w ustawieniach profilu - /ustawienia/profil/
+// [data-night-mode] section.images figure.background[data-v-77b97ea2]
+.images {
+  figure {
+    background: var(--geyser) !important;
+  }
+
+  // Przycisk ustawiania tla w ustawieniach profilu - /ustawienia/profil/
+  // [data-night-mode] section.images figure.background button.change[data-v-77b97ea2]
+  button.change {
+    background-color: var(--heather) !important;
+  }
+}
+
+.user-info {
+  background: var(--geyser) !important;
+}

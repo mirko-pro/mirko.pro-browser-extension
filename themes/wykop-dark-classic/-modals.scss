@@ -1,0 +1,25 @@
+// MODALS
+.v--modal-box {
+  background: var(--porcelain) !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45) !important;
+}
+
+.v--modal-overlay {
+  background: rgba(#000000, 0.75) !important;
+}
+
+// LIGHTBOX
+.cool-lightbox {
+  background: rgba(#000000, 0.75) !important;
+  &__slide {
+    img {
+      box-shadow: none !important;
+    }
+  }
+}
+
+.modal {
+  footer {
+    background: transparent !important;
+  }
+}

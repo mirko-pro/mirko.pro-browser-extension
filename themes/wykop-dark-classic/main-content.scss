@@ -1,0 +1,380 @@
+// bordo
+.burgundy-profile {
+  color: #d54545 !important;
+}
+
+// section.link-block>section>article>header h2 a[data-v-441f7cc5]:visited
+// ZNALEZISKA
+.link-block {
+  section {
+    article {
+      header {
+        h2 {
+          a {
+            &:visited {
+              color: #787878 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// article.link-article>footer[data-v-0ef3e3b5]:before
+.link-article {
+  background: var(--porcelain) !important;
+
+  footer {
+    &:before {
+      background-image: linear-gradient(
+        to top,
+        rgb(28, 28, 28, 0) 0%,
+        rgb(28, 28, 28, 100) 100%
+      ) !important;
+    }
+  }
+}
+
+// COMMENTS
+// section.entry-content[data-v-725caa02] .wrapper blockquote
+.entry-content {
+  .wrapper {
+    a {
+      color: var(--wykopBlue) !important;
+    }
+
+    blockquote {
+      background: var(--whitishLight) !important;
+      color: var(--tuna) !important;
+    }
+
+    code {
+      padding: 5px;
+      background: var(--santasGray) !important;
+
+      &.block {
+        padding: 0;
+        border: 1px solid rgba(#ffffff, 0.1) !important;
+        // white-space: pre !important;
+      }
+    }
+  }
+}
+
+// SURVEY
+.survey {
+  background: rgba(#ffffff, 0.05) !important;
+  border: 1px solid rgba(#ffffff, 0.1) !important;
+
+  .content {
+    // heading separator line
+    &:before {
+      background: rgba(#ffffff, 0.1) !important;
+    }
+
+    ul {
+      li {
+        &:hover {
+          border-color: rgba(#ffffff, 0.2) !important;
+        }
+
+        i {
+          background: var(--whitishLight) !important;
+          color: var(--porcelain) !important;
+          border-color: rgba(#ffffff, 0.1) !important;
+        }
+
+        &.voted {
+          i {
+            background: var(--wykopBlue) !important;
+            color: var(--porcelain) !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+// "POKAZ CALOSC" BUTTON
+.more {
+  color: var(--tuna) !important;
+}
+
+.vote-box {
+  .dig {
+    button {
+      color: var(--tuna) !important;
+      background: rgba(#fff, 0.15) !important;
+    }
+  }
+}
+
+// [data-night-mode] section.rating-box>ul li.plus[data-v-76790450]
+.rating-box {
+  ul {
+    li {
+      &.plus {
+        color: var(--apple) !important;
+      }
+    }
+  }
+}
+
+// related-rating-box>ul li.plus
+.related-rating-box {
+  ul {
+    li {
+      &.plus {
+        color: var(--apple) !important;
+      }
+    }
+  }
+}
+
+button.plus,
+button.minus {
+  border-color: transparent !important;
+  background: rgba(#ffffff, 0.1) !important;
+  width: 25px !important;
+  height: 25px !important;
+  position: relative;
+  border-radius: 5px !important;
+
+  // on click animate - scale it up a bit and bounce it down
+  // cubic-bezier(0.175, 0.885, 0.32, 1.275)
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+
+  &:active {
+    transform: scale(1.15) translateY(-2px) rotate(-3deg) !important;
+  }
+
+  &:hover {
+    background: rgba(#ffffff, 0.15) !important;
+    // transform: scale(1.1) !important;
+  }
+
+  &:before {
+    width: 100% !important;
+    height: 100% !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+
+  &:after {
+    // center absolute
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    position: absolute !important;
+  }
+}
+
+button.plus {
+  &:after {
+    left: 51.5% !important;
+  }
+}
+
+button.plus {
+  // border-color: var(--apple) !important;
+  &:after {
+    background: var(--apple) !important;
+  }
+
+  &.voted {
+    background: var(--apple) !important;
+
+    &:after {
+      // background: var(--whitish) !important;
+      background: #ffffff !important;
+    }
+  }
+}
+
+button.minus {
+  &.voted {
+    background: var(--wykopRed) !important;
+
+    &:after {
+      // background: var(--whitish) !important;
+      background: #ffffff !important;
+    }
+  }
+}
+
+.rating-box {
+  .buttons {
+    button + button {
+      margin-left: 5px !important;
+    }
+  }
+}
+
+.entry-voters {
+  .more {
+    color: rgba(#ffffff, 0.3) !important;
+
+    &:hover {
+      color: var(--tuna) !important;
+    }
+  }
+
+  ul {
+    padding: 0 0 0 20px !important;
+    color: rgba(#ffffff, 0.5) !important;
+    position: relative !important;
+
+    li {
+      a {
+        &.username {
+          opacity: 0.6;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    &:before {
+      position: absolute !important;
+      display: block;
+      content: '' !important;
+      background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.1122 0H0.887755C0.397959 0 0 0.396388 0 0.887665V14.1123C0 14.6021 0.397959 15 0.887755 15H14.1122C14.602 15 15 14.6021 15 14.1123V0.886134C15 0.396388 14.602 0 14.1122 0ZM11.4199 8.3869H8.38776V11.4172C8.38776 11.9085 7.9898 12.3049 7.5 12.3049C7.0102 12.3049 6.61224 11.9085 6.61224 11.4172V8.3869H3.58163C3.09184 8.3869 2.69388 7.99051 2.69388 7.49923C2.69388 7.00949 3.09184 6.61157 3.58163 6.61157H6.61224V3.58127C6.61224 3.09152 7.0102 2.6936 7.5 2.6936C7.99133 2.6936 8.38776 3.08999 8.38776 3.58127V6.61157H11.4184C11.9082 6.61157 12.3061 7.00796 12.3061 7.49923C12.3061 7.99051 11.9082 8.3869 11.4199 8.3869Z' fill='white'/%3E%3C/svg%3E");
+      width: 15px !important;
+      height: 15px !important;
+      opacity: 0.3;
+      top: 1px !important;
+      left: 0 !important;
+    }
+  }
+}
+
+// all id's that starts from 'comment-' name
+[id^='comment-'] {
+  // border-radius: 0 !important;
+
+  div.comments {
+    // margin: 22px 0 0 34px !important;
+    margin: 22px 0 0 0 !important;
+
+    .entry-subcomments {
+      .entry {
+        padding-left: 30px !important;
+        border-radius: 0 !important;
+
+        @media (max-width: 768px) {
+          padding-left: 15px !important;
+        }
+      }
+    }
+  }
+
+  &.entry {
+    background-color: rgba(#ffffff, 0.05) !important;
+    // 212121
+    // background: #212121 !important;
+    border: 0 !important;
+    box-shadow: none !important;
+
+    // highlight on hover
+    article {
+      background: transparent !important;
+      &:hover {
+        background: transparent !important;
+      }
+    }
+
+    .actions {
+      // opacity: 0.8;
+      // transition: opacity 0.2s ease-in-out;
+
+      ul {
+        li {
+          &.comments,
+          &.reply,
+          &.favorite {
+            opacity: 0.8;
+          }
+        }
+      }
+
+      // &:hover {
+      //   opacity: 1;
+      // }
+    }
+
+    &.reply {
+      background-color: transparent !important;
+      border: 0 !important;
+      border-left: 3px solid rgba(#ffffff, 0.08) !important;
+      // padding: 0 0 0 10px !important;
+
+      &.author,
+      &.link-author {
+        border-left-color: rgba(#ffffff, 0.8) !important;
+
+        article {
+          &:before {
+            display: none !important;
+          }
+        }
+
+        &:before {
+          display: none !important;
+        }
+      }
+    }
+  }
+}
+
+// POST HEADER
+section.entry {
+  section.reply {
+    margin-top: 0 !important;
+
+    &:before {
+      // background: rgba(#ffffff, 0.05) !important;
+      background: transparent !important;
+    }
+  }
+
+  article {
+    header {
+      .right {
+        div {
+          div + span {
+            opacity: 0.75;
+            transition: opacity 0.2s ease-in-out;
+
+            &:hover {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// PHOTO
+section.entry-photo figure figcaption,
+section.entry-photo figure {
+  // background: rgba(#ffffff, 0.05) !important;
+  background: #2f2f2f !important;
+  // background: transparent !important;
+  border: 0 !important;
+  // padding: 0 !important;
+  // border: 1px solid rgba(#ffffff, 0.05) !important;
+  color: rgba(#ffffff, 0.6) !important;
+
+  &:after {
+    // background from #2f2f2f on bottom and transparent on top
+    background: linear-gradient(
+      to bottom,
+      rgba(47, 47, 47, 0) 0%,
+      rgba(47, 47, 47, 0.65) 100%
+    ) !important;
+  }
+}

@@ -1,0 +1,179 @@
+// HEADER
+header.header {
+  background: var(--wykopGrayLight) !important;
+
+  .right {
+    .dropdown {
+      ul {
+        background: var(--wykopGrayLight) !important;
+
+        li {
+          a {
+            &:hover {
+              background: rgba(#ffffff, 0.1) !important;
+            }
+          }
+        }
+      }
+    }
+
+    li.dropdown.active > a .svg-inline svg {
+      fill: var(--porcelain) !important;
+    }
+
+    // NOTIFIcATIONS
+    // [data-night-mode] li>section[data-v-72712cf7] section.notifications.empty section.no-items
+
+    // section.stream.notifications-stream[data-v-0a84d0a4] section.no-items figure img
+
+    .notifications {
+      &.empty {
+        section.no-items {
+          background: var(--wykopGrayLight) !important;
+
+          img {
+            filter: grayscale(100%);
+          }
+        }
+      }
+    }
+
+    // MESSAGES
+    //  header.header>.right>nav>ul[data-v-5182b5f6]> li.dropdown>section
+    // [data-night-mode] li>section[data-v-f7553d7c] section.stream>.content
+
+    .dropdown-body {
+      background: var(--whitishLight) !important;
+
+      .content {
+        background: var(--wykopGrayLight) !important;
+
+        .item {
+          background: var(--wykopGrayLight) !important;
+          border-left: 3px solid transparent;
+          transition: border-left-color 0.2s ease-in-out;
+
+          &:hover {
+            border-left-color: #ffffff;
+
+            // background: rgba(#ffffff, 0.25) !important;
+          }
+        }
+      }
+
+      // header.header>.right>nav>ul[data-v-5182b5f6]> li.dropdown>section
+
+      .dropdown {
+        section {
+          background: var(--whitishLight) !important;
+        }
+      }
+
+      footer {
+        a {
+          text-align: center !important;
+
+          &:hover {
+            background: rgba(#ffffff, 0.1) !important;
+          }
+        }
+      }
+    }
+  }
+
+  //header.header>.right>nav>ul[data-v-5182b5f6]> li.dropdown>ul, [data-night-mode] header.header>.right>nav>ul[data-v-5182b5f6]> li.dropdown>section
+}
+
+// .notify {
+//   background: var(--wykopGrayLight) !important;
+
+//   &:before {
+//     background: rgba(#ffffff, 0.1) !important;
+//   }
+// }
+// .notifications section.stream>.content>section.notify.read
+
+.notifications {
+  .stream {
+    .content {
+      background: #2e2e2e !important;
+
+      .notify,
+      .read {
+        background: #2e2e2e !important;
+      }
+
+      .notify {
+        border-left: 3px solid transparent;
+        transition: all 0.2s ease-in-out !important;
+
+        &:hover {
+          border-left-color: #ffffff;
+          opacity: 0.8 !important;
+        }
+
+        &.read {
+          background: #2e2e2e !important;
+        }
+
+        &:before {
+          background: #2e2e2e !important;
+        }
+      }
+    }
+  }
+}
+
+// [data-night-mode] section.notifications[data-v-719a8b7a] section.stream>.content>section.notify:before
+
+// [data-night-mode] section.search-input form>input[type="search"][data-v-17330ca0]
+// section.search-input form>label[data-v-17330ca0]
+// section.search-input form[data-v-17330ca0] .popper-button button
+.search-input {
+  form {
+    label {
+      background: rgba(#ffffff, 0.45) !important;
+    }
+
+    input[type="search"] {
+      // background-color: rgba(#ffffff, 0.1) !important;
+      background-color: #4b4b4b !important;
+      // background-color: var(--whitish) !important;
+      border: 1px solid rgba(#ffffff, 0.1);
+
+      &::placeholder {
+        color: rgba(#ffffff, 0.35) !important;
+      }
+    }
+
+    a {
+      background: rgba(#ffffff, 0.45) !important;
+    }
+
+    .popper-button {
+      button {
+        background: rgba(#ffffff, 0.45) !important;
+      }
+    }
+  }
+}
+
+// [data-night-mode] section.search-results-dropdown
+// section.search-results-dropdown section.stream>.content>section article header
+// section.search-results-dropdown section.stream>.content>footer a:not(.active-select)
+.search-results-dropdown {
+  background: var(--porcelain) !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45) !important;
+
+  .content {
+    header {
+      background: var(--whitishLight) !important;
+    }
+
+    footer {
+      a:not(.active-select) {
+        background: var(--whitishLight) !important;
+      }
+    }
+  }
+}

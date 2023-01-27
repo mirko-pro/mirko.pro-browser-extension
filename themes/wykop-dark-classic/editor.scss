@@ -1,0 +1,118 @@
+// EDITOR
+// section.editor>footer .buttons .enter label[data-v-6d6ce51c]
+// [data-night-mode] section.editor.inner[data-v-75e1d3e2]
+.editor {
+  &.inner {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45) !important;
+    border-color: rgba(#ffffff, 0.05) !important;
+  }
+
+  .menu-dropdown {
+    background: var(--whitishLight) !important;
+
+    li {
+      border-bottom: 0 !important;
+
+      &:nth-child(2n) {
+        background: rgba(#ffffff, 0.05) !important;
+      }
+    }
+  }
+
+  footer {
+    .buttons {
+      .enter {
+        label {
+          border: 0 !important;
+          background-color: var(--heather) !important;
+          // border-color: var(--heather) !important;
+        }
+      }
+    }
+  }
+}
+
+// background: [data-night-mode] section.article-editor[data-v-03412471] .codex-editor
+// .codex-editor .ce-toolbar .ce-toolbar__actions .ce-settings .ce-settings__button
+.codex-editor {
+  background: var(--porcelain) !important;
+  border-color: rgba(#ffffff, 0.05) !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45) !important;
+
+  svg {
+    fill: var(--silverChalice) !important;
+  }
+
+  .ce-settings,
+  .ce-inline-toolbar,
+  .ce-conversion-toolbar {
+    background: var(--whitishLight) !important;
+    border-color: rgba(#ffffff, 0.05) !important;
+  }
+
+  .ce-toolbox--opened {
+    background: var(--whitishLight) !important;
+    border-color: transparent !important;
+  }
+
+  .ce-settings button,
+  .ce-inline-toolbar button,
+  .ce-settings__button,
+  .ce-toolbox__button,
+  .ce-inline-toolbar__dropdown,
+  .ce-conversion-toolbar__tools div,
+  .cdx-settings-button {
+    background: transparent !important;
+
+    &:hover {
+      background: rgba(#ffffff, 0.05) !important;
+    }
+  }
+
+  .ce-block__content {
+    background: transparent !important;
+    border-color: transparent !important;
+    box-shadow: 0 !important;
+  }
+}
+
+.cdx-button,
+.ce-code,
+.cdx-quote,
+.image-tool--loading,
+.image-tool__image {
+  background: rgba(#ffffff, 0.05) !important;
+  border-color: transparent !important;
+  box-shadow: 0 !important;
+  color: var(--silverChalice) !important;
+
+  &:hover {
+    background: rgba(#ffffff, 0.08) !important;
+    color: #fff !important;
+  }
+}
+
+// editor-lenny-faces
+// [data-night-mode] ul.editor-lenny-faces li.more[data-v-13b1c9be]
+ul.editor-lenny-faces {
+  li {
+    border-color: rgba(#ffffff, 0.05) !important;
+    color: rgba(#ffffff, 0.8) !important;
+
+    &.more {
+      background: rgba(#ffffff, 0.1) !important;
+      color: rgba(#ffffff, 0.8) !important;
+    }
+
+    &:hover {
+      border-color: rgba(#ffffff, 0.1) !important;
+      color: #fff !important;
+    }
+  }
+}
+
+ul.editor-lenny-faces li {
+  &:hover {
+    background: rgba(#ffffff, 0.05) !important;
+  }
+}

@@ -1,0 +1,51 @@
+[data-night-mode] {
+  background: #161616 !important;
+
+  @import './wykop-dark-classic/-variables.scss';
+  @import './wykop-dark-classic/-base.scss';
+  @import './wykop-dark-classic/-forms.scss';
+  @import './wykop-dark-classic/-dropdown.scss';
+  @import './wykop-dark-classic/-modals.scss';
+  @import './wykop-dark-classic/-toasts.scss';
+  // sections
+  @import './wykop-dark-classic/header.scss';
+  @import './wykop-dark-classic/navigation.scss';
+  @import './wykop-dark-classic/editor.scss';
+  @import './wykop-dark-classic/user-profile.scss';
+  @import './wykop-dark-classic/messages.scss';
+  @import './wykop-dark-classic/main-content.scss';
+  // highlight.js
+  @import './wykop-dark-classic/hljs.scss';
+}
+
+// scroll styles
+::-webkit-scrollbar {
+  width: 10px !important;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #393939 !important;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(149, 149, 149) !important;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(167, 167, 167) !important;
+}
+
+// unable to override this
+[data-night-mode]
+  li
+  > section[data-v-72712cf7]
+  section.notifications
+  > .stream
+  > .content
+  > .notify.read {
+  background: transparent !important;
+
+  &:hover {
+    background: transparent !important;
+  }
+}

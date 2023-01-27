@@ -1,0 +1,91 @@
+// MOBILE NAV
+// nav.mobile-navbar>ul>li a>span[data-v-1adb6cc8]:after
+// nav.mobile-navbar>ul>li a[data-v-1adb6cc8]
+
+// aside.left-panel.mobile[data-v-f35fd822]
+.left-panel {
+  &.mobile {
+    & + div {
+      background: rgba(#000000, 0.75) !important;
+    }
+  }
+
+  .buttons {
+    ul {
+      li {
+        position: relative;
+
+        a {
+          &:before {
+            border: 0 !important;
+            background: rgba(#ffffff, 0.05) !important;
+          }
+        }
+      }
+    }
+  }
+
+  .links {
+    a {
+      &:hover {
+        span {
+          // background: rgba(#ffffff, 0.1) !important;
+        }
+      }
+    }
+  }
+}
+
+.mobile-navbar {
+  ul {
+    li {
+      &.active {
+        a {
+          span {
+            &:after {
+              background: var(--porcelain) !important;
+            }
+          }
+        }
+      }
+
+      a {
+        color: var(--tuna) !important;
+
+        span {
+          &:after {
+            background: var(--gullGray) !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+// PAGINATION
+// nav.new-pagination ul li
+.new-pagination {
+  ul {
+    li {
+      &.active {
+        a {
+          color: var(--wykopOrange) !important;
+        }
+      }
+    }
+  }
+}
+
+// FOOTER
+// footer.footer>nav ul li[data-v-e346312a]:not(:last-of-type):after
+.footer {
+  nav {
+    ul {
+      li {
+        &:not(:last-of-type):after {
+          background: rgba(#ffffff, 0.15) !important;
+        }
+      }
+    }
+  }
+}

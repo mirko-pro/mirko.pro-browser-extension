@@ -1,0 +1,30 @@
+// [data-night-mode] .toast-container>div.toast-success
+
+// [data-night-mode] .toast-container>div.toast-success
+
+// [data-night-mode] .toast-container>div.toast-success .toast-title
+
+// <div class="toast toast-success" style="display: block;">
+// <div class="toast-title">Dodano do czarnej listy</div>
+// <div class="toast-message empty"></div>
+// </div>
+
+// [data-night-mode] .toast-container>div .toast-message
+
+.toast {
+  background-color: var(--athensGray) !important;
+
+  &.toast-success {
+    border-bottom-color: var(--apple) !important;
+  }
+
+  .toast-title {
+    font-size: 14px !important;
+    color: var(--tuna) !important;
+  }
+
+  .toast-message {
+    font-size: 12px !important;
+    color: var(--tuna) !important;
+  }
+}
