@@ -1,6 +1,6 @@
 {
   "name": "mirko.pro-wtyczka",
-  "version": "1.0.3",
+  "version": "1.0.3.5",
   "description": "Projekt wtyczki mirko.pro",
   "private": true,
   "repository": "https://github.com/abhijithvijayan/web-extension-starter.git",

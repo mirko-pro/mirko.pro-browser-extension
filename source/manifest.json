@@ -1,16 +1,8 @@
 {
-  "manifest_version": 3,
+  "__chrome|opera|edge__manifest_version": 3,
+  "__firefox__manifest_version": 2,
   "name": "mirko.pro",
   "version": "0.0.0",
-  "description": "Wtyczka dla serwisu wykop.pl",
-  "homepage_url": "https://mirko.pro",
-
-  "host_permissions": [
-    "https://*.wykop.pl/*",
-    "https://*.hejto.pl/*",
-    "https://*.mirko.pro/*"
-  ],
-  "permissions": ["storage"],
 
   "icons": {
     "16": "assets/icons/favicon-16.png",
@@ -18,8 +10,31 @@
     "48": "assets/icons/favicon-48.png",
     "128": "assets/icons/favicon-128.png"
   },
+  "description": "Wtyczka dla serwisu wykop.pl",
+  "homepage_url": "https://mirko.pro",
+  "short_name": "mirko.pro",
 
-  "action": {
+  "__firefox__applications": {
+    "gecko": {
+      "id": "{ab29902c-6a39-4d58-8cc8-7be896af6d16}"
+    }
+  },
+
+  "__chrome|opera|edge__host_permissions": [
+    "https://*.wykop.pl/*",
+    "https://*.hejto.pl/*",
+    "https://*.mirko.pro/*"
+  ],
+
+  "__firefox__permissions": [
+    "https://*.wykop.pl/*",
+    "https://*.hejto.pl/*",
+    "https://*.mirko.pro/*"
+  ],
+
+  "permissions": ["storage"],
+
+  "__chrome|opera|edge__action": {
     "default_popup": "popup.html",
     "default_icon": {
       "16": "assets/icons/favicon-16.png",
@@ -29,6 +44,17 @@
     }
   },
 
+  "__firefox__browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "assets/icons/favicon-16.png",
+      "32": "assets/icons/favicon-32.png",
+      "48": "assets/icons/favicon-48.png",
+      "128": "assets/icons/favicon-128.png"
+    },
+    "default_title": "mirko.pro"
+  },
+
   "options_ui": {
     "page": "options.html",
     "open_in_tab": true
@@ -36,7 +62,7 @@
 
   "background": {
     "__firefox__scripts": ["js/background.bundle.js"],
-    "__chrome|opera|edge__service_worker": "js/background.bundle.js"
+    "__chrome|opera|edge__service_worker": "js/bgServiceWorker.bundle.js"
   },
 
   "content_scripts": [
@@ -57,7 +83,7 @@
     }
   ],
 
-  "web_accessible_resources": [
+  "__chrome|opera|edge__web_accessible_resources": [
     {
       "matches": ["https://*.wykop.pl/*"],
       "resources": ["css/wykopDarkClassic.css"]
@@ -66,5 +92,10 @@
       "matches": ["https://*.hejto.pl/*"],
       "resources": ["css/hejtoDarkClassic.css"]
     }
+  ],
+
+  "__firefox__web_accessible_resources": [
+    "css/wykopDarkClassic.css",
+    "css/hejtoDarkClassic.css"
   ]
 }
