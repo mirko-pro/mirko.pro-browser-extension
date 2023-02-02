@@ -20,23 +20,32 @@ const injectTheme = async () => {
 
   if (options.themeSource === 'mirko.pro-remote') {
     if (options.themeUrl) {
-      fetchAndInjectTheme(options.themeUrl);
+      const fetchOptions = {
+        method: 'GET',
+        mode: 'cors',
+      };
+      fetchAndInjectTheme(options.themeUrl, fetchOptions);
     }
   }
 };
 
-const fetchAndInjectTheme = async (url: string) => {
-  fetch(url, {
-    method: 'GET',
-    mode: 'cors',
-  }).then((response) => {
-    response.text().then((text) => {
-      const style = document.createElement('style');
-      style.dataset.mirkopro = 'true';
-      style.innerHTML = text;
-      document.head.appendChild(style);
+const fetchAndInjectTheme = async (url: string, options?: any) => {
+  fetch(url, options)
+    .then((response) => {
+      response.text().then((text) => {
+        const style = document.createElement('style');
+        style.dataset.mirkopro = 'true';
+        style.innerHTML = text;
+        document.head.appendChild(style);
+      });
+    })
+    .catch((e) => {
+      if (url === 'https://mirko.pro/themes/wykopDarkClassic.css') {
+        fetchAndInjectTheme(browser.runtime.getURL(`css/wykopDarkClassic.css`));
+      }
+
+      throw new Error(`🛑 Error while fetching theme from ${url} : ${e}`);
     });
-  });
 };
 
 export default injectTheme;
