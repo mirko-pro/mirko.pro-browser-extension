@@ -106,7 +106,6 @@ const observer = async () => {
                 const img = el.querySelector('img');
                 if (img) {
                   const putInsideWrapper = () => {
-                    console.log('putInsideWrapper');
                     const wrapper = document.createElement('div');
                     wrapper.style.position = 'relative';
                     wrapper.style.overflow = 'hidden';
